@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+    "http://hibernate.org/dtd/hibernate-configuration-5.3.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- ✅ Database Connection Properties -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/vehicle_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Ayush@123</property>
+
+        <!-- ✅ Hibernate Settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- ✅ JDBC Connection Pool Size (optional) -->
+        <property name="hibernate.connection.pool_size">5</property>
+
+        <!-- ✅ Entity Mappings -->
+        <mapping class="com.vrs.entity.Customer"/>
+        <mapping class="com.vrs.entity.Vehicle"/>
+        <mapping class="com.vrs.entity.SparePart"/>
+    </session-factory>
+</hibernate-configuration>
