@@ -1,0 +1,9 @@
+com\vrs\entity\SparePart.class
+com\vrs\util\HibernateUtil.class
+com\vrs\servlet\SparePartRegisterServlet.class
+com\vrs\servlet\ListVehiclesServlet.class
+com\vrs\servlet\RegisterServlet.class
+com\vrs\servlet\SearchServlet.class
+com\vrs\entity\Customer.class
+com\vrs\entity\Vehicle.class
+com\vrs\servlet\ListSparePartsServlet.class
