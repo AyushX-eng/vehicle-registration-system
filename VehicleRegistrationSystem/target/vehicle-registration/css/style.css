@@ -1,0 +1,127 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container,
+.form-container,
+.success-container,
+.vehicle-list-container,
+.spare-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styles */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Button styles */
+button, .btn {
+    padding: 12px;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #219150;
+}
+
+/* Back & link buttons */
+a.link, .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+a.link:hover, .back-btn:hover {
+    background: #2980b9;
+}
+
+/* Success icon (if used) */
+.success-image {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Loader animation (optional) */
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Table styles (for list_vehicles.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
