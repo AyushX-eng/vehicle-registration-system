@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Registration System - Welcome</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #eef2f7, #f8fafc);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.4em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            padding: 50px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            padding: 30px 25px;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #1e3a8a;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 18px;
+            background-color: #1e40af;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚗 Vehicle Registration System</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>📝 Register Vehicle</h2>
+            <p>Register your vehicle with owner details.</p>
+            <a href="Register_vehicle.html">Register Now</a>
+        </div>
+
+        <div class="card">
+            <h2>🔍 Search Vehicle</h2>
+            <p>Find vehicle details by number or model.</p>
+            <a href="search_vehicle.html">Search Now</a>
+        </div>
+
+        <div class="card">
+            <h2>📋 List All Vehicles</h2>
+            <p>View all registered vehicles in the database.</p>
+            <a href="list">View List</a>
+        </div>
+
+        <div class="card">
+            <h2>🔧 Register Spare Part</h2>
+            <p>Add spare parts to existing vehicles.</p>
+            <a href="register_spare.html">Go to Spare Part Form</a>
+        </div>
+
+        <div class="card">
+            <h2>🛠️ List All Spare Parts</h2>
+            <p>View all spare parts linked to vehicles.</p>
+            <a href="list-spares">View Spare Parts</a>
+        </div>
+    </div>
+</body>
+</html>
